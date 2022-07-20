@@ -2,6 +2,7 @@
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 20px;
 }
 
 body {
@@ -32,4 +33,28 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+#name-tag {
+height: 280px;
+width: 400px;
+display: flex; 
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+background-color: beige;
+border-radius: var(--border-radius);
+
+}
+#greeting,
+#footer {
+    background-color:darkgreen;
+}
+#greeting {
+    height: 75px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+#footer {
+    height: 35px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
