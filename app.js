@@ -80,7 +80,7 @@ lastButton.addEventListener('input', ()=> {
 
 // add event listener
 lastButton.addEventListener('click', ()=> {
-    console.log('quit touching me!');
+    console.log('wow this salsas is delicious!');
 // get the value from the button input
     const value = lastInput.value;
     console.log(value);
