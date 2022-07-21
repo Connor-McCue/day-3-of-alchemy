@@ -14,11 +14,11 @@ const greetElem = document.getElementById('greeting');
 
 preElem.textContent = 'Sir';
 nameElem.textContent = 'black';
-nameElem.textContent = 'Connor';
+nameElem.textContent = 'Seamus';
 nameElem.style.color = 'black';
-lastElem.textContent = 'McCue';
+lastElem.textContent = "O'Sullivan";
 lastElem.style.color = 'black';
-greetElem.textContent = 'Hello welcome to Chilis';
+greetElem.textContent = "Hello Welcome to Chili's";
 greetElem.style.color = 'red';
 const container = document.getElementById('name-tag');
 container.style.backgroundColor = 'white';
@@ -62,7 +62,7 @@ updateButton.addEventListener('click', () => {
     console.log('clicking the button');
   // get the value from the input
     const value = nameInput.value;
-    console.log(value)
+    console.log(value);
   // replace the value in the name div with the input
     nameDiv.textContent = value;
 });
@@ -133,10 +133,70 @@ normalButton.addEventListener('click', ()=> {
 
 );
 
+// BUTTON red - Red font
+// make a variable for input, button, and lastDiv
+const redButton = document.getElementById('red-btn');
+const blueButton = document.getElementById('blue-btn');
+const greenButton = document.getElementById('green-btn');
+const yellowButton = document.getElementById('yellow-btn');
+const purpleButton = document.getElementById('purple-btn');
+// add event listener
+redButton.addEventListener('click', ()=> {
+    console.log('roses are red');
+// change font size
+    document.getElementById('prefix').style.color = 'red';
+    document.getElementById('name').style.color = 'red';
+    document.getElementById('last-name').style.color = 'red';
+}
+);
+blueButton.addEventListener('click', ()=> {
+    console.log('violets are blue');
+// change font size
+    document.getElementById('prefix').style.color = 'blue';
+    document.getElementById('name').style.color = 'blue';
+    document.getElementById('last-name').style.color = 'blue';
+}
+);
+greenButton.addEventListener('click', ()=> {
+    console.log('green is the color of envy');
+// change font size
+    document.getElementById('prefix').style.color = 'green';
+    document.getElementById('name').style.color = 'green';
+    document.getElementById('last-name').style.color = 'green';
+}
+);
+yellowButton.addEventListener('click', ()=> {
+    console.log('mellow yellow');
+// change font size
+    document.getElementById('prefix').style.color = 'yellow';
+    document.getElementById('name').style.color = 'yellow';
+    document.getElementById('last-name').style.color = 'yellow';
+}
+);
+purpleButton.addEventListener('click', ()=> {
+    console.log('royalty');
+// change font size
+    document.getElementById('prefix').style.color = 'purple';
+    document.getElementById('name').style.color = 'purple';
+    document.getElementById('last-name').style.color = 'purple';
+}
+);
+/*const applebeesButton = document.getElementById('applebees-btn');
+applebeesButton.addEventListener('click', ()=> {
+    console.log('wrong choice');
+// change font size
+    document.getElementById('prefix').style.color = 'purple';
+    document.getElementById('name').style.color = 'purple';
+    document.getElementById('last-name').style.color = 'purple';
+    greetElem.textContent = "Hello Welcome to Applebees's";
+    document.getElementById('chilislogo').
+}
+);
+
 //document.getElementById("demo").style.fontSize = "x-large";
 
 // same function as updateButton but in 3 lines
 //function clickHandler(){
 //  console.log("clicking");
 //};
-
+*/
